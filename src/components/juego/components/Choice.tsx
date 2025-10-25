@@ -1,20 +1,49 @@
+import { motion } from "framer-motion";
 import type { Answer } from "../types/answer";
 
-
 interface ChoiceProps {
-    choice: Answer | null;
-    onClick?: (answer: Answer) => void;
+  choice: Answer | null;
+  onClick?: (choice: Answer) => void;
 }
 
 export const Choice = ({ choice, onClick }: ChoiceProps) => {
-    const onClickChoice = () => (onClick && choice) && onClick(choice);
+  const handleClick = () => {
+    if (onClick && choice) onClick(choice);
+  };
 
-    return  (
-        <div className="rounded-full text-6xl sm:text-7xl md:text-8xl lg:text-9xl">
-            <button className="cursor-pointer bg-violet-300 hover:bg-fuchsia-400 ring-4 ring-fuchsia-200 rounded-full shadow-xl hover:shadow-2xl transition-transform transition-shadow h-28 w-28 sm:h-36 sm:w-36 md:h-44 md:w-44 lg:h-48 lg:w-48 text-violet-900 hover:scale-105" onClick={onClickChoice}>
-                {choice ?? "?"}
-            </button>
-        </div>
-    )
+  return (
+    <motion.button
+      whileHover={{ scale: onClick ? 1.08 : 1 }}
+      whileTap={{ scale: onClick ? 0.95 : 1 }}
+      onClick={handleClick}
+      disabled={!onClick}
+      className={`
+        flex items-center justify-center 
+        w-24 h-24 md:w-28 md:h-28
+        rounded-full 
+        bg-gradient-to-br from-pink-200 via-pink-300 to-pink-400
+        shadow-[0_4px_12px_rgba(255,182,193,0.5)]
+        hover:shadow-[0_8px_20px_rgba(255,182,193,0.8)]
+        transition-all duration-300 ease-out
+        border-2 border-pink-100
+        select-none
+        ${onClick ? 'cursor-pointer' : 'cursor-default opacity-90'}
+      `}
+      aria-label={`Elegir ${choice?.symbol ?? '?'}`}
+    >
+      <motion.span
+        initial={{ scale: 0.98 }}
+        animate={{ scale: 1 }}
+        transition={{
+          repeat: onClick ? Infinity : 0,
+          repeatType: "mirror",
+          duration: 2.2,
+          ease: "easeInOut",
+        }}
+        className="text-5xl md:text-6xl drop-shadow-[0_1px_4px_rgba(255,255,255,0.4)]"
+      >
+        {choice?.symbol ?? "?"}
+      </motion.span>
+    </motion.button>
+  );
 };
-

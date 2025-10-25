@@ -1,5 +1,5 @@
-export enum STATUS {
-    DRAW = "Draw",
-    LOSE = "Lose",
-    WIN = "Win",
-}
+export const STATUS = {
+  DRAW: "Draw",
+  LOSE: "Lose",
+  WIN: "Win",
+} as const;

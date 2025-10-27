@@ -1,14 +1,14 @@
 import { Routes, Route } from "react-router-dom";
-import Footer from "./components/Footer"
-import Hero from "./components/Hero"
-import Navbar from "./components/Navbar"
-import TechBanner from "./components/TechBanner"
-import Proyectos from "./components/proyectos/Proyectos"
-import Sobre from "./components/sobre/Sobre"
-import Contacto from "./components/contacto/Contacto"
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import TechBanner from "./components/TechBanner";
+import Proyectos from "./components/proyectos/Proyectos";
+import Sobre from "./components/sobre/Sobre";
+import Contacto from "./components/contacto/Contacto";
 import Juego from "./components/juego/Juego";
 import Curriculum from "./components/Curriculum";
-
+import NotFound from "./components/NotFound";
 function Landing() {
   return (
     <>
@@ -36,6 +36,7 @@ function App() {
           <Route path="/sobre" element={<Sobre/>} />
           <Route path="/juego" element={<Juego/>} />
 
+          <Route path="*" element={<NotFound/>} />
         </Routes>
       </main>
       <Footer/>
@@ -44,3 +45,5 @@ function App() {
 }
 
 export default App;
+
+

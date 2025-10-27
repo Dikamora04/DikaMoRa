@@ -57,7 +57,7 @@ export default function SobreMi() {
         {/* Botones */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
           <motion.a
-            href="#contacto"
+            href="/#contacto"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="bg-gradient-to-r from-pink-400 to-sky-300 text-white font-semibold px-8 py-3 rounded-full shadow-md hover:from-pink-500 hover:to-sky-400 transition-all"
@@ -95,5 +95,6 @@ export default function SobreMi() {
     </section>
   );
 }
+
 
 

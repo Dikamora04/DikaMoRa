@@ -1,16 +1,15 @@
-import { useState, useEffect } from "react";
+﻿import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "/assets/LogoSF.png";
 
 type NavItem = { id: number; title: string; link: string };
 type SocialItem = { id: number; title: string; link: string; icon: string };
 
-const navbarLinks: NavItem[] = [
-  { id: 1, title: "Inicio", link: "/" },
-  { id: 2, title: "Sobre Mí", link: "/sobre" },
-  { id: 3, title: "Proyectos", link: "/proyectos" },
-  { id: 4, title: "Juego", link: "/juego" },
-];
+const navbarLinks: NavItem[] = [  { id: 1, title: "Inicio", link: "/" }, 
+   { id: 2, title: "Sobre Mí", link: "/sobre" },
+    { id: 3, title: "Proyectos", link: "/proyectos" },
+      { id: 4, title: "Contacto", link: "/#contacto" },
+        { id: 5, title: "Juego", link: "/juego" }];
 
 const navbarRedes: SocialItem[] = [
   { id: 1, title: "GitHub", link: "https://github.com/Dikamora04", icon: "bi bi-github" },
@@ -139,3 +138,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

@@ -27,7 +27,7 @@ const Curriculum: React.FC = () => {
         {/* Botones */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-4">
           <motion.a
-            href="/cv/CV_Diana.pdf"
+            href="/cv/CVDKMR.pdf"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
@@ -39,7 +39,7 @@ const Curriculum: React.FC = () => {
           </motion.a>
 
           <motion.a
-            href="/cv/CV_Diana.pdf"
+            href="/cv/CVDKMR.pdf"
             download="DianaMorales_CV.pdf"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -59,7 +59,7 @@ const Curriculum: React.FC = () => {
           className="w-full mt-8 flex justify-center"
         >
           <img
-            src="/cv/CV_Diana.png"
+            src="/cv/CVDKMR.png"
             alt="CV Diana Morales"
             className="rounded-2xl shadow-xl w-full max-w-3xl"
           />

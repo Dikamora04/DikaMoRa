@@ -66,7 +66,7 @@ export default function SobreMi() {
           </motion.a>
 
           <motion.a
-            href="/cv/CV_Diana.pdf"
+            href="/cv/CVDKMR.pdf"
             download="DianaMorales_CV.pdf"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

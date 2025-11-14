@@ -28,13 +28,13 @@ const MELINDO_IMAGES = [
 ];
 
 const STRONYX_IMAGES = [
-  "/assets/Stronyx/Screenshot 2025-10-22 104449.png",
-  "/assets/Stronyx/Screenshot 2025-10-22 104506.png",
-  "/assets/Stronyx/Screenshot 2025-10-22 104523.png",
-  "/assets/Stronyx/Screenshot 2025-10-22 104542.png",
-  "/assets/Stronyx/Screenshot 2025-10-22 104603.png",
-  "/assets/Stronyx/Screenshot 2025-10-22 104621.png",
-  "/assets/Stronyx/Screenshot 2025-10-22 104638.png",
+  "/assets/Stronyx/Screenshot 2025-11-13 203228.png",
+  "/assets/Stronyx/Screenshot 2025-11-13 203243.png",
+  "/assets/Stronyx/Screenshot 2025-11-13 203258.png",
+  "/assets/Stronyx/Screenshot 2025-11-13 203320.png",
+  "/assets/Stronyx/Screenshot 2025-11-13 203331.png",
+  "/assets/Stronyx/Screenshot 2025-11-13 203347.png",
+  "/assets/Stronyx/Screenshot 2025-11-13 203347.png",
   "/assets/Stronyx/Screenshot 2025-10-22 104706.png",
 ];
 
@@ -67,6 +67,7 @@ export default function Proyectos() {
           { label: 'React', icon: 'bi bi-filetype-jsx' },
           { label: 'JavaScript', icon: 'bi bi-filetype-js' },
           { label: 'Bootstrap', icon: 'bi bi-bootstrap' },
+          { label: 'I18Next', icon: 'bi bi-translate' },
         ]}
       />
 
@@ -74,12 +75,14 @@ export default function Proyectos() {
         title="Stronyx"
         images={str}
         description="Página informativa con enfoque en componentes reutilizables, transiciones y buenas prácticas de UI. Formulario funcional con emailJS."
-        ctaHref="https://stronyx.com"
-        ctaLabel="Visitar stronyx.com"
+        ctaHref="https://stronyx.netlify.app/"
+        ctaLabel="Visitar Stronyx"
         techs={[
           { label: 'React', icon: 'bi bi-filetype-jsx' },
           { label: 'TypeScript', icon: 'bi bi-filetype-tsx' },
           { label: 'Tailwind CSS', icon: 'bi bi-wifi' },
+          { label: 'EmailJS', icon: 'bi bi-envelope' },
+          { label: 'Vite', icon: 'bi bi-lightning-charge' },
         ]}
       />
     </section>

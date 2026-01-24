@@ -59,7 +59,7 @@ const Curriculum: React.FC = () => {
           className="w-full mt-8 flex justify-center"
         >
           <img
-            src="/cv/CVDKMR.png"
+            src="/cv/CVDKMR.jpg"
             alt="CV Diana Morales"
             className="rounded-2xl shadow-xl w-full max-w-3xl"
           />
